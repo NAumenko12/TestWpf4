@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="TestWpf4.View.AddDishWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TestWpf4.View" xmlns:viewmodel="clr-namespace:TestWpf4.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:AddDishViewModel}"
+             mc:Ignorable="d" 
+            >
+    <Grid Background="AliceBlue" Height="300" Width="400">
+        <StackPanel Margin="20">
+            <Label Content="Название"/>
+            <TextBox Text="{Binding NewDish.Название, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="Вес"/>
+            <TextBox Text="{Binding NewDish.Вес, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="Категория"/>
+            <ComboBox ItemsSource="{Binding Categories}"
+                      DisplayMemberPath="Название"
+                      SelectedValuePath="Id_Категория_блюда"
+                      SelectedValue="{Binding NewDish.Категория, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="Доступ для заказа"/>
+            <TextBox Text="{Binding NewDish.Доступ_для_заказа, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="Стоимость"/>
+            <TextBox Text="{Binding NewDish.Стоимость, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="Добавить" Command="{Binding AddDishCommand}" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

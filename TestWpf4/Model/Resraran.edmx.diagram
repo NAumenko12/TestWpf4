@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fec2f58f78a04285ae27fdf40bd467bb" Name="Diagram1">
+        <EntityTypeShape EntityType="var4Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="var4Model.Блюдо" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="var4Model.Должности" Width="1.5" PointX="1.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="var4Model.Заказ" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="var4Model.Ингридиента" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="var4Model.Категория_блюда" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="var4Model.Состав_Блюда" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="var4Model.Состав_Заказа" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="var4Model.Сотрудники" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="var4Model.FK__Блюдо__Категория__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="var4Model.FK__Состав_Бл__Блюдо__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="var4Model.FK__Состав_За__Блюдо__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="var4Model.FK__Сотрудник__Должн__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="var4Model.FK__Заказ__Офицанта__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="var4Model.FK__Состав_За__Заказ__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="var4Model.FK__Состав_Бл__Ингри__46E78A0C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
